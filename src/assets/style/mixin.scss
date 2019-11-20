@@ -1,0 +1,17 @@
+@mixin backgroundFont {
+    width: 100%;
+    height: 100px;
+    background: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .linka {
+        color: chocolate;
+    }
+}
+
+@mixin mainBg {
+    transform: scale(0.9);
+    @include backgroundFont
+}
