@@ -1,5 +1,21 @@
+@import "./globalVar.scss";
+@import "./mixin.scss";
+
 .head {
     @import './main.scss';
+}
+
+.price {
+    height: 400px;
+
+    /*color: $color-primary;*/
+    /* 原始引用方式，错误 */
+    &::before {
+        content: attr(data-txt);
+    }
+
+    @include color_primary();
+    /* 采用函数调用 */
 }
 
 .top {

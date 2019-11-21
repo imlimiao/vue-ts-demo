@@ -1,3 +1,7 @@
+/* 全局变量 */
+
+
+
 @mixin backgroundFont {
     width: 100%;
     height: 100px;
@@ -9,9 +13,44 @@
     .linka {
         color: chocolate;
     }
+
+
+    .linb {
+        color: $nav-color;
+        //--bglinkb: pink;
+        //--bglinkb: #ff4400;
+        //background: var(--bglinkb, #ff4400);
+        background: $bglinkb
+    }
 }
 
 @mixin mainBg {
     transform: scale(0.9);
     @include backgroundFont
+}
+
+@mixin color_primary($data-txt:$data-defalut) {
+
+    /*既可以传参数，又可以直接根据DOM 属性来*/
+    @if $data-txt=="green" {
+        background: $color-primary-green;
+    }
+
+    @else if $data-txt=="blue" {
+        background: $color-primary-blue;
+    }
+
+    @else {
+        background: $color-primary;
+    }
+
+    &[data-txt="green"] {
+        background: $color-primary-green;
+    }
+
+
+    &[data-txt="blue"] {
+        background: $color-primary-blue;
+    }
+
 }
