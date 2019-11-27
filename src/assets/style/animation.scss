@@ -1,0 +1,31 @@
+/*transform*/
+@keyframes transform {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/*运动中的球*/
+@keyframes spin {
+    0% {
+        transform: rotate(-30deg) scaleY(.5) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-30deg) scaleY(.5) rotate(360deg);
+    }
+}
+
+@keyframes anti-spin {
+    0% {
+        transform: rotate(0deg) scaleY(2) rotate(30deg) scale(1);
+    }
+
+    100% {
+        transform: rotate(-360deg) scaleY(2) rotate(30deg) scale(1);
+    }
+}

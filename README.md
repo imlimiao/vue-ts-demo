@@ -32,3 +32,7 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### [vue.config.js 默认配置](https://blog.csdn.net/qq_35167373/article/details/80671346)
+
+### [在 VUE 中使用 Lottie 动画](https://blog.csdn.net/qq_31490071/article/details/88690704)
+
+### [bodymovin_light.min.js](https://cdnjs.com/libraries/bodymovin)

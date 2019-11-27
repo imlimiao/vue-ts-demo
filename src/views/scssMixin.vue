@@ -13,21 +13,19 @@
 
         </div>
         <div class="head-foot"> 尾部</div>
+        
     </div>
 </template>
 <script lang="ts">
     import { Vue, Component, Prop, Watch, Emit } from 'vue-property-decorator'
     import { mixins } from 'vue-class-component'
-
     //import demoMixins from './mixins/demoMixins'
-
     @Component({
         name: 'scssMixin',
     })
     export default class extends Vue {
 
         bgColor: string = "blue";
-
         //按钮移动事件
         private buttonMove(e: any) {
             const x = e.pageX - e.target.offsetLeft
