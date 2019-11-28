@@ -55,6 +55,12 @@ const routes = [
     name: "lottie",
     component: () =>
       import(/* webpackChunkName: "animation" */ "@/views/lottie/index.vue")
+  },
+  {
+    path: "/canvas",
+    name: "canvas",
+    component: () =>
+      import(/* webpackChunkName: "animation" */ "@/views/canvas.vue")
   }
 ];
 
