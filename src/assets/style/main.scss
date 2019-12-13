@@ -5,12 +5,10 @@
 
 & {
     &-top {
-
         @extend .fontExtend;
         @include mainBg;
         font-size: 18px;
         color: aqua;
-
     }
 
     &-content {

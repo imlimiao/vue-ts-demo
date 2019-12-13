@@ -18,7 +18,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "aboutHelloworld" */ "@/views/About.vue")
+      import(/* webpackChunkName: "about" */ "@/views/About.vue")
   },
   {
     path: "/cubic",
@@ -27,7 +27,16 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "aboutCubic" */ "@/views/cubic-bezier.vue")
+      import(/* webpackChunkName: "cubic" */ "@/views/cubic-bezier.vue")
+  },
+  {
+    path: "/cubicTwo",
+    name: "cubicTwo",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "cubicTwo" */ "@/views/cubic-two.vue")
   },
   {
     path: "/scss",
@@ -36,7 +45,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "aboutCubic" */ "@/views/scssMixin.vue")
+      import(/* webpackChunkName: "scss" */ "@/views/scssMixin.vue")
   },
   {
     path: "/animation",
@@ -48,19 +57,42 @@ const routes = [
     path: "/cssgrid",
     name: "cssgrid",
     component: () =>
-      import(/* webpackChunkName: "animation" */ "@/views/cssGrid.vue")
+      import(/* webpackChunkName: "cssgrid" */ "@/views/cssGrid.vue")
   },
   {
     path: "/lottie",
     name: "lottie",
     component: () =>
-      import(/* webpackChunkName: "animation" */ "@/views/lottie/index.vue")
+      import(/* webpackChunkName: "lottie" */ "@/views/lottie/index.vue")
   },
   {
     path: "/canvas",
     name: "canvas",
     component: () =>
-      import(/* webpackChunkName: "animation" */ "@/views/canvas.vue")
+      import(/* webpackChunkName: "canvas" */ "@/views/canvas.vue")
+  },
+  {
+    path: "/clipPath",
+    name: "clipPath",
+    component: () =>
+      import(/* webpackChunkName: "clipPath" */ "@/views/clipPath.vue")
+  },
+  {
+    path: "/acvs",
+    name: "acvs",
+    component: () =>
+      import(/* webpackChunkName: "acvs" */ "@/views/acvs.vue")
+  },
+  {
+    path: "/webThree",
+    name: "webThree",
+    component: () =>
+      import(/* webpackChunkName: "webThree" */ "@/views/three/webThree.vue")
+  }, {
+    path: "/intersection",
+    name: "intersection",
+    component: () =>
+      import(/* webpackChunkName: "intersectionObserver" */ "@/views/intersectionObserver/intersction.vue")
   }
 ];
 

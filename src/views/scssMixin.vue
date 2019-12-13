@@ -13,7 +13,7 @@
 
         </div>
         <div class="head-foot"> 尾部</div>
-        
+
     </div>
 </template>
 <script lang="ts">
@@ -24,7 +24,6 @@
         name: 'scssMixin',
     })
     export default class extends Vue {
-
         bgColor: string = "blue";
         //按钮移动事件
         private buttonMove(e: any) {
